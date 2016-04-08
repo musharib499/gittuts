@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/swipelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/front_item"
+            layout="@layout/myvisit_item_hidden"></include>
+
+        <include
+            android:id="@+id/hidden_item_layout"
+            layout="@layout/myvisits_item_front"></include>
+    </com.daimajia.swipe.SwipeLayout>
+
+</LinearLayout>

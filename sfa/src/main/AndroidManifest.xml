@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gaadi.sfa">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="com.gcloud.gaadi.permission.ALLOW_SFA_LOGIN_BY_TOKEN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".ApplicationController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppCompatNoActionBarTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.HomePageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompatNoActionBarTheme" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeFullscreen" />
+        <activity
+            android:name=".ui.BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.BaseNavigationViewActivity"
+            android:screenOrientation="portrait">
+
+            <!--
+              <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.NearByDealerMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.DealerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.DealerPinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LandingDboard"
+            android:icon="@drawable/ic_sfa_logo"
+            android:theme="@style/metransparent"/>
+        <activity
+            android:name=".ui.ResetPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeFullscreen" />
+        <activity
+            android:name=".ui.ForgotPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeFullscreen" />
+
+        <provider
+            android:name=".provider.SfaContentProvider"
+            android:authorities="com.gaadi.sfa.provider"
+            android:exported="false" />
+
+        <service
+            android:name=".syncadapter.SfaSyncService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/dustersyncadapter" />
+        </service>
+
+        <activity
+            android:name=".ui.CheckedInDealerActivity"
+            android:theme="@style/AppCompatNoActionBarTheme" />
+
+        <service android:name=".syncadapter.GenericAccountService">
+
+            <!-- Required filter used by the system to launch our account service. -->
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <!-- This points to an XMLf ile which describes our account service. -->
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+        <service
+            android:name=".syncadapter.SfaJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d9e49e04a5a5b958571340c591d1bc6c6052b478" />
+
+        <activity android:name=".ui.MyVisitsListActivity">
+
+        </activity>
+    </application>
+
+</manifest>

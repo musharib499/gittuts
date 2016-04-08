@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B71C1C</color>
+    <color name="colorPrimaryDark">#A62828</color>
+    <color name="colorAccent">#b22626</color>
+    <color name="textColorPrimary">@color/white</color>
+    <color name="primaryColor">#FFFFFFFF</color>
+    <color name="windowBackground">@color/white</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="secondaryColor">#444444</color>
+    <color name="textColor">#263242</color>
+    <color name="black">#263242</color>
+    <color name="hintColor">#AEAEAE</color>
+
+
+
+
+    <color name="transparent_vwPager">#e4000000</color>
+    <color name="login_button_background">#EA3300</color>
+    <color name="pressed_color">#30000000</color>
+    <color name="selected_color">#10000000</color>
+    <color name="selected_indicator">#FFFF00</color>
+    <color name="unselected_indicator">#D1C4E9</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">
+        @color/vpi__bright_foreground_holo_light
+    </color>
+    <color name="vpi__bright_foreground_inverse_holo_light">
+        @color/vpi__bright_foreground_holo_dark
+    </color>
+    <color name="toolbar_background_color">#B50000</color>
+    <color name="strokeColor">#CECECE</color>
+    <color name="translucent_white">#DDFFFFFF</color>
+    <color name="transparent_white">#F6F6F6</color>
+    <color name="text_color">#444444</color>
+    <color name="red">#B50000</color>
+    <color name="cardview_shadow">#E0E0E0</color>
+    <color name="hintStrokeColor">#80CECECE</color>
+    <color name="gray">#ffafafaf</color>
+
+
+    <color name="myWindowBackground">#DEDEDE</color>
+    <color name="background_red_color">#DEDEDE</color>
+    <color name="toolbar_background">#DEDEDE</color>
+    <color name="color_for_login">#00000000</color>
+
+</resources>

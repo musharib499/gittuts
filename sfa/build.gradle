@@ -1,0 +1,146 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    signingConfigs {
+        dev {
+            keyAlias 'dev_keystore'
+            keyPassword '123456'
+            storeFile file(project.DEV_SIGNING_KEY)
+            storePassword '123456'
+        }
+    }
+
+    compileSdkVersion Integer.parseInt(project.COMPILE_SDK_VERSION)
+    buildToolsVersion project.BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        minSdkVersion Integer.parseInt(project.MIN_SDK_VERSION)
+        targetSdkVersion Integer.parseInt(project.TARGET_SDK_VERSION)
+        multiDexEnabled true
+        applicationId project.APPLICATION_ID
+    }
+
+
+    buildTypes {
+
+        debug {
+            buildConfigField "String", "REST_HOST", project.REST_HOST_DEV
+            buildConfigField "String", "MAKE", project.MAKE_DEV
+            buildConfigField "String", "ENVIRONMENT", project.DEV_ENVIRONMENT
+            buildConfigField "String", "API_RESPONSE_FORMAT", project.API_RESPONSE_FORMAT
+            buildConfigField "String", "MODEL_ID", "\"203\""
+            buildConfigField "String", "API_KEY", project.API_KEY
+
+            buildConfigField "String", "ACCOUNT_NAME", "\"" + project.ACCOUNT_NAME + "\""
+            buildConfigField "String", "ACCOUNT_TYPE", "\"" + project.ACCOUNT_TYPE + "\""
+            buildConfigField "String", "ACCOUNT_AUTHORITY", "\"" + project.ACCOUNT_AUTHORITY + "\""
+
+            buildConfigField "String", "GAADI_PACKAGE", "\"com.gcloud.gaadi.dev\""
+
+            resValue "string", "account_name", project.ACCOUNT_NAME
+            resValue "string", "account_type", project.ACCOUNT_TYPE
+            resValue "string", "account_authority", project.ACCOUNT_AUTHORITY
+
+            resValue("string", "app_name", "\"${GAADI_SFA_DEV}\"")
+
+            signingConfig signingConfigs.dev
+            applicationIdSuffix project.APPLICATION_ID_SUFFIX_DEV
+            debuggable true
+            minifyEnabled false
+        }
+
+
+        mockable{
+            buildConfigField "String", "REST_HOST", project.REST_HOST_MOCKABLE
+            buildConfigField "String", "MAKE", project.MAKE_DEV
+            buildConfigField "String", "ENVIRONMENT", project.MOCKABLE_ENVIRONMENT
+            buildConfigField "String", "API_RESPONSE_FORMAT", project.API_RESPONSE_FORMAT
+            buildConfigField "String", "MODEL_ID", "\"203\""
+            buildConfigField "String", "API_KEY", project.API_KEY
+
+            buildConfigField "String", "ACCOUNT_NAME", "\"" + project.ACCOUNT_NAME + "\""
+            buildConfigField "String", "ACCOUNT_TYPE", "\"" + project.ACCOUNT_TYPE + "\""
+            buildConfigField "String", "ACCOUNT_AUTHORITY", "\"" + project.ACCOUNT_AUTHORITY + "\""
+
+            buildConfigField "String", "GAADI_PACKAGE", "\"com.gcloud.gaadi\""
+
+            resValue "string", "account_name", project.ACCOUNT_NAME
+            resValue "string", "account_type", project.ACCOUNT_TYPE
+            resValue "string", "account_authority", project.ACCOUNT_AUTHORITY
+
+            resValue("string", "app_name", "\"${GAADI_SFA_MOCK}\"")
+
+            signingConfig signingConfigs.dev
+            applicationIdSuffix project.APPLICATION_ID_SUFFIX_MOCK
+            debuggable true
+            minifyEnabled false
+        }
+
+        release {
+
+            resValue("string", "app_name", "\"${GAADI_SFA_RELEASE}\"")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+
+    productFlavors {
+
+        dealer {
+            def versionMajor = "${SFA_MAJOR_VERSION_CODE_GAADI}"
+            def versionMinor = "${SFA_MINOR_VERSION_CODE_GAADI}"
+            def versionPatch = "${SFA_PATCH_VERSION_CODE_GAADI}"
+            def versionBuild = "${SFA_BUILD_VERSION_CODE_GAADI}"
+
+            versionCode versionMajor.toInteger() * 100000 +
+                    versionMinor.toInteger() * 10000 +
+                    versionPatch.toInteger() * 1000 +
+                    versionBuild.toInteger()
+
+            versionName versionMajor + "." + versionMinor + "." + versionPatch + "." + versionBuild
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project.GOOGLE_PLAY_SERVICES
+    compile project.APP_COMPAT_LIB
+    compile project.GSON_LIB
+    compile project.RETROFIT_LIBRARY
+    compile project.OKHTTP_LIBRARY
+    compile project.RECYCLER_VIEW_LIB
+    compile project.CARD_VIEW_LIBRARY
+    compile project.MATERIAL_DESIGN_COMPAT
+    compile project.CIRCLE_VIEW_IMAGE
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.google.maps.android:android-maps-utils:0.3.4'
+    compile 'com.google.android.gms:play-services-maps:8.3.0'
+    compile "com.daimajia.swipelayout:library:1.2.0@aar"
+    compile 'com.google.android.gms:play-services-location:8.3.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }
+    compile 'org.solovyev.android.views:linear-layout-manager:0.5@aar'
+}

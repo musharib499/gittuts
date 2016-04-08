@@ -1,0 +1,371 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="metransparent" parent ="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+
+        <item name="android:colorAccent" tools:targetApi="21">@color/colorAccent</item>
+        <item name="android:textColorHighlight">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <!-- color of the menu overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorPrimary">@color/color_for_login</item>
+        <item name="colorPrimaryDark">@color/toolbar_background</item>
+
+        <item name="android:colorPrimary" tools:targetApi="21">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark" tools:targetApi="21">@color/colorPrimaryDark</item>
+
+    </style>
+    <!--Text Font styling-->
+    <style name="TextAppearance.FontPath" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <!-- <item name="fontPath">fonts/nunito_regular.ttf</item>-->
+    </style>
+
+
+
+
+    <style name="AppThemeFullscreen" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/color_for_login</item>
+        <item name="colorPrimaryDark">@color/toolbar_background</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorControlNormal">@color/background_red_color</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+        <item name="android:windowBackground">@color/myWindowBackground</item>
+        <item name="android:colorPrimary" tools:targetApi="21">@color/color_for_login</item>
+        <item name="android:colorPrimaryDark" tools:targetApi="21">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppCompatNoActionBarTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:colorAccent" tools:targetApi="21">@color/colorAccent</item>
+        <item name="android:textColorHighlight">@color/white</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <!-- color of the menu overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/textColorPrimary</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+
+        <item name="android:colorPrimary" tools:targetApi="21">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark" tools:targetApi="21">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="AppCompatNoActionBarThemeDrawer" parent="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:colorAccent" tools:targetApi="21">@color/colorAccent</item>
+        <item name="android:textColorHighlight">@color/white</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <!-- color of the menu overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/text_color</item>
+        <item name="android:textColorPrimary">@color/text_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="21">true</item>
+        <item name="android:colorPrimary" tools:targetApi="21">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark" tools:targetApi="21">@color/colorPrimaryDark</item>
+
+    </style>
+
+
+    <!--appcompattheme for fullscreen and transparent-->
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="TextCustomNormalFontStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:capitalize">characters</item>
+
+        <item name="android:textAppearance">?attr/textAppearanceListItemSmall</item>
+        <item name="android:textColor">@color/white</item>/>
+    </style>
+    <!--Edit Text font size and color-->
+
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="android:textSize">@dimen/hint_input_text_size</item>
+
+    </style>
+
+    <style name="textSpinnerStyleHeading">
+        <item name="android:color">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColorHighlight">@color/hintColor</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:paddingLeft">@dimen/pedding_small</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:background">@drawable/custom_dropdown</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath</item>
+    </style>
+
+    <style name="radio_button_style_background">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/selector_radio_btn</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+
+        <item name="android:layout_margin">@dimen/margin_small</item>
+        <item name="android:padding">@dimen/pedding_small</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@drawable/toggle_text_color</item>
+    </style>
+
+    <style name="radio_button_style">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/selector_raw</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+
+        <item name="android:layout_margin">@dimen/margin_small</item>
+        <item name="android:padding">@dimen/pedding_small</item>
+    </style>
+    <style name="editTextStyleNormal">
+        <item name="android:color">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColorHighlight">@color/hintColor</item>
+        <item name="android:background">@drawable/abc_edit_text_material</item>
+        <!--<item name="android:singleLine">true</item>-->
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:paddingLeft">@dimen/pedding_medium</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath</item>
+        <!--<item name="android:ellipsize">end</item>-->
+    </style>
+
+    <style name="editTextStyleSmall">
+        <item name="android:color">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColorHighlight">@color/hintColor</item>
+        <item name="android:background">@drawable/abc_edit_text_material</item>
+        <!--<item name="android:singleLine">true</item>-->
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:paddingLeft">@dimen/pedding_medium</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath</item>
+        <!--<item name="android:ellipsize">end</item>-->
+    </style>
+
+    <style name="editTextStyleLarge">
+        <item name="android:color">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColorHighlight">@color/hintColor</item>
+        <item name="android:background">@drawable/abc_edit_text_material</item>
+        <!--<item name="android:singleLine">true</item>-->
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:paddingLeft">@dimen/pedding_medium</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath</item>
+        <!--<item name="android:ellipsize">end</item>-->
+    </style>
+
+    <style name="editTextStyleXLarge">
+        <item name="android:color">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColorHighlight">@color/hintColor</item>
+        <item name="android:background">@drawable/abc_edit_text_material</item>
+        <!--<item name="android:singleLine">true</item>-->
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="android:paddingLeft">@dimen/pedding_medium</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath</item>
+        <!--<item name="android:ellipsize">end</item>-->
+    </style>
+
+    <style name="editTextStyXXleLarge">
+        <item name="android:color">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColorHighlight">@color/hintColor</item>
+        <item name="android:background">@drawable/abc_edit_text_material</item>
+        <!--<item name="android:singleLine">true</item>-->
+        <item name="android:textSize">@dimen/text_size_xxlarge</item>
+        <item name="android:paddingLeft">@dimen/pedding_medium</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath</item>
+        <!--<item name="android:ellipsize">end</item>-->
+    </style>
+
+    <style name="editTextStyleXXXLarge">
+        <item name="android:color">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColorHighlight">@color/hintColor</item>
+        <item name="android:background">@drawable/abc_edit_text_material</item>
+        <!--<item name="android:singleLine">true</item>-->
+        <item name="android:textSize">@dimen/text_size_xxxlarge</item>
+        <item name="android:paddingLeft">@dimen/pedding_medium</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath</item>
+        <!--<item name="android:ellipsize">end</item>-->
+    </style>
+
+    <style name="TextStyleNormal">
+        <item name="android:color">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColorHighlight">@color/hintColor</item>
+
+        <!--<item name="android:singleLine">true</item>-->
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:paddingLeft">@dimen/pedding_small</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath</item>
+        <!--<item name="android:ellipsize">end</item>-->
+    </style>
+
+    <style name="TextStyleSmall">
+        <item name="android:color">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColorHighlight">@color/hintColor</item>
+
+        <!--<item name="android:singleLine">true</item>-->
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:paddingLeft">@dimen/pedding_small</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath</item>
+        <!--<item name="android:ellipsize">end</item>-->
+    </style>
+
+    <style name="TextStyleLarge">
+        <item name="android:color">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColorHighlight">@color/hintColor</item>
+
+        <!--<item name="android:singleLine">true</item>-->
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:paddingLeft">@dimen/pedding_small</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath</item>
+        <!--<item name="android:ellipsize">end</item>-->
+    </style>
+
+    <style name="TextStyleXLarge">
+        <item name="android:color">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColorHighlight">@color/hintColor</item>
+
+        <!--<item name="android:singleLine">true</item>-->
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="android:paddingLeft">@dimen/pedding_small</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath</item>
+        <!--<item name="android:ellipsize">end</item>-->
+    </style>
+
+    <style name="TextStyleXXLarge">
+        <item name="android:color">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColorHighlight">@color/hintColor</item>
+
+        <!--<item name="android:singleLine">true</item>-->
+        <item name="android:textSize">@dimen/text_size_xxlarge</item>
+        <item name="android:paddingLeft">@dimen/pedding_small</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath</item>
+        <!--<item name="android:ellipsize">end</item>-->
+    </style>
+
+    <style name="editTextStyle2">
+        <item name="android:color">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColorHighlight">@color/hintColor</item>
+        <!--<item name="android:singleLine">true</<item>-->
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:paddingLeft">@dimen/pedding_small</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath</item>
+        <!--<item name="android:ellipsize">end</item>-->
+    </style>
+
+    <style name="textInputLayoutStyle" parent="TextAppearance.AppCompat">
+        <item name="android:color">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath</item>
+        <item name="colorAccent">@color/gray</item>
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <!--<item name="android:ellipsize">end</item>-->
+    </style>
+
+
+</resources>

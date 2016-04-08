@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg_xhdpi">
+
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/logo"
+            android:src="@drawable/logo_light_sfa"
+            android:layout_gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/user_pic"
+                android:src="@drawable/ic_person_white_36dp"
+                android:layout_weight="1"
+                />
+
+
+            <com.gaadi.sfa.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:id="@+id/user_email"
+                android:hint="Email"
+                android:textColor="@color/translucent_white"
+                app:met_floatingLabelTextColor="@color/white"
+                android:inputType="textEmailAddress"
+                android:layout_gravity="center"
+                android:textColorHint="@color/white"
+                android:textSize="15dp"
+                app:met_floatingLabelTextSize="25dp"
+                android:gravity="bottom"
+                app:met_floatingLabel="none"
+                app:met_floatingLabelText="Password"
+                app:met_textColor="@color/translucent_white"
+                app:met_textColorHint="@color/translucent_white"
+                style="@style/metransparent"
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"
+            android:id="@+id/email_view"
+            android:layout_gravity="center|clip_vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:paddingTop="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/password_pic"
+                android:src="@drawable/ic_lock_white_36dp"
+                android:layout_weight="1"
+                />
+
+
+        <com.gaadi.sfa.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:id="@+id/user_password"
+            android:hint="Password"
+            android:textColor="@color/translucent_white"
+            app:met_floatingLabelTextColor="@color/white"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            android:textColorHint="@color/white"
+            android:textSize="15dp"
+            app:met_floatingLabelTextSize="25dp"
+            android:gravity="bottom"
+            app:met_floatingLabel="none"
+            app:met_floatingLabelText="Password"
+            app:met_textColor="@color/translucent_white"
+            style="@style/metransparent"
+            app:met_textColorHint="@color/translucent_white"
+
+
+            />
+        </LinearLayout>
+        <View
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"
+            android:id="@+id/password_view"
+            android:layout_gravity="center|clip_vertical"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:gravity="center"
+            android:id="@+id/sig_in"
+            android:padding="1dp"
+            android:paddingTop="1dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:background="@drawable/button_border"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/reset_password"
+            android:text="Reset Password"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:onClick="onResetPassword"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center|bottom"
+            android:singleLine="true"></TextView>
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"
+            android:layout_gravity="center|clip_vertical"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

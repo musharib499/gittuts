@@ -1,0 +1,78 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.honda.bike.ui.NavigationActivity">
+    <!--<group android:checkableBehavior="single">-->
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/nav_profile_title" />
+        <item
+            android:id="@+id/nav_pending"
+            android:icon="@drawable/ic_pending_black_24dp"
+            android:title="@string/nav_pending_title"
+            app:showAsAction="collapseActionView|always" />
+        <item
+            android:id="@+id/nav_attendence"
+            android:icon="@drawable/ic_attendence_contact_calendar_black_24dp"
+            android:title="@string/nav_attendence_title"
+            app:showAsAction="collapseActionView|always" />
+    <item
+        android:id="@+id/nav_report"
+        android:icon="@drawable/ic_report_black_24dp"
+        android:title="@string/nav_report_title"
+        app:showAsAction="collapseActionView|always">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_report1"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Report 1" />
+            <item
+                android:id="@+id/nav_report2"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Report 2" />
+            <item
+                android:id="@+id/nav_report3"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Report 3" />
+            <item
+                android:id="@+id/nav_report4"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Report 4" />
+            </group>
+        </menu>
+
+    </item>
+        <item
+            android:id="@+id/nav_call_support"
+            android:icon="@drawable/ic_phone_forwarded_black_24dp"
+            android:title="@string/nav_call_support_title"
+            app:showAsAction="collapseActionView|always">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_warranty"
+                        android:icon="@drawable/ic_warranty_black_24dp"
+                        android:title="@string/nav_warranty_title" />
+                    <item
+                        android:id="@+id/nav_classified"
+                        android:icon="@drawable/ic_classified_black_24dp"
+                        android:title="@string/nav_classified_title" />
+                    <item
+                        android:id="@+id/nav_insurance"
+                        android:icon="@drawable/ic_insurance_black_24dp"
+                        android:title="@string/nav_insurance_title" />
+                </group>
+            </menu>
+
+        </item>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout_black_24dp"
+        android:title="@string/nav_logout_title" />
+    </group>
+
+</menu>

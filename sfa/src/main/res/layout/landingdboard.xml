@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_count_mv"
+                style="@style/TextStyleNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/counter_view"
+                android:elevation="9dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="10"
+                android:textColor="@color/textColorPrimary" />
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_weight="1"
+                android:background="@drawable/utility_border"
+                android:elevation="3dp">
+        <LinearLayout
+            android:id="@+id/lay_visited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:id="@+id/nav_my_visits"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/my_visit" />
+
+
+            <TextView
+                android:id="@+id/myvisits"
+                style="@style/TextStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="My Visits" />
+        </LinearLayout>
+</android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="1"
+            android:onClick="onMyDealers">
+
+            <TextView
+                android:id="@+id/tv_count_md"
+                style="@style/TextStyleNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/counter_view"
+                android:elevation="9dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="10"
+                android:textColor="@color/textColorPrimary" />
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_weight="1"
+            android:background="@drawable/utility_border"
+            android:elevation="3dp"
+
+            android:onClick="onMyDealers"
+           >
+        <LinearLayout
+            android:id="@+id/my_dealer_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+
+        <ImageView
+            android:id="@+id/my_dealers"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/my_dealers" />
+
+            <TextView
+                android:id="@+id/mydealers"
+                style="@style/TextStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="My Dealers" />
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        </RelativeLayout>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+       >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_count_sp"
+                style="@style/TextStyleNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/counter_view"
+                android:elevation="9dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="10"
+                android:textColor="@color/textColorPrimary" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:background="@drawable/utility_border"
+
+
+            android:elevation="3dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+       >
+        <ImageView
+            android:id="@+id/sell_packg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/sell_package"
+
+            />
+
+        <TextView
+            android:id="@+id/selpckg"
+            style="@style/TextStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Sell packages" />
+    </LinearLayout>
+        </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_count_ag"
+                style="@style/TextStyleNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/counter_view"
+                android:elevation="9dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="10"
+                android:textColor="@color/textColorPrimary" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/utility_border"
+            android:onClick="onGcloud">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+         >
+        <ImageView
+            android:id="@+id/acess_gcloud"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/gcloud"
+
+           />
+
+            <TextView
+                android:id="@+id/gcloud"
+                style="@style/TextStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Acess G-Cloud" />
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+       android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+    </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/layoutRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucent_white"
+        android:gravity="bottom|right"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="100dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

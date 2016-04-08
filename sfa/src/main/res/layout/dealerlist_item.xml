@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:animateLayoutChanges="true"
+    android:elevation="3dp"
+    android:fadingEdge="horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+
+    <TextView
+        android:id="@+id/tv_trim_string"
+        style="@style/TextStyleXXLarge"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/counter_view"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="st"
+        android:textAllCaps="true"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/text_size_xxxlarge" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_weight="3"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/dealername"
+                style="@style/TextStyleLarge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:minWidth="0dp"
+                android:text="Carnation Sales Pvt Ltd"
+                android:textSize="15dp"
+                />
+
+            <ImageView
+                android:id="@+id/callimage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:src="@drawable/ic_phone_black_24dp"
+               />
+        </LinearLayout>
+            <TextView
+                android:id="@+id/dealeradress"
+                style="@style/TextStyleNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daryaganj NewDdelhi"
+                />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_small"
+    android:orientation="horizontal"
+    android:weightSum="3">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/lastvist"
+        style="@style/TextStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Visit:"
+        android:singleLine="true" />
+    <TextView
+        android:id="@+id/date"
+        style="@style/TextStyleNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Date:24-06-2015"
+        android:singleLine="true" />
+    <TextView
+        android:id="@+id/time"
+        style="@style/TextStyleNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Time:07:35 PM"
+        android:singleLine="true" />
+
+</LinearLayout>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|left"
+        android:background="@color/cardview_shadow_start_color"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/follow_up"
+            style="@style/TextStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Follow Up:"
+            android:singleLine="true"></TextView>
+        <TextView
+            android:id="@+id/date_followup"
+            style="@style/TextStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Date: 24-06-2015"
+            android:singleLine="true"></TextView>
+        <TextView
+            android:id="@+id/time_followup"
+            style="@style/TextStyleNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Time:07:35 PM"
+            android:singleLine="true"></TextView>
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|right"
+            android:background="@color/cardview_shadow_start_color" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+
+            >
+
+           <Button
+               android:id="@+id/dealerlist_checkin"
+               style="@style/TextStyleLarge"
+               android:layout_width="wrap_content"
+
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom|center"
+               android:layout_marginTop="10dp"
+               android:background="@color/red"
+               android:gravity="center"
+               android:minHeight="0dp"
+               android:minWidth="0dp"
+               android:padding="8dp"
+               android:text="CHECKIN"
+               android:textColor="@color/white"
+               android:textSize="10dp" />
+
+        </LinearLayout>
+
+</LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</android.support.v7.widget.CardView>

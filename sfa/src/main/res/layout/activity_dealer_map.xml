@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/topLayout"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/red"
+                android:id="@+id/titleLayout"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iconBack"
+                    android:layout_width="wrap_content"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/iconBack"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Loading..."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/titleLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:background="@android:color/white"
+                    android:id="@+id/dealerSearch"
+                    android:hint="Search Dealers/Location"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/black"
+                    android:padding="5dp"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    android:layout_height="wrap_content"></AutoCompleteTextView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layoutDealerInfo"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/viewTrans"
+                android:background="@android:color/transparent"
+                android:layout_height="25dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_below="@+id/viewTrans"
+                android:layout_height="25dp"/>
+
+            <TextView
+                android:id="@+id/dealerImage"
+                style="@style/TextStyleXXLarge"
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:background="@drawable/counter_view"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:padding="2dp"
+                android:text="st"
+                android:textAllCaps="true"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/text_size_xxxlarge" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:padding="3dp"
+                android:layout_below="@+id/viewTrans"
+                android:layout_alignParentRight="true"
+                android:id="@+id/btnCloseDealerInfo"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:layout_height="20dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/dealerItem"
+                layout="@layout/dealerlist_item" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnDealerList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_map_dealer_list"/>
+
+
+</RelativeLayout>

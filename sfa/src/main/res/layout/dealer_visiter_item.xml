@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.v7.widget.CardView
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="@drawable/text_circular_view_select"
+card_view:cardUseCompatPadding="true"
+card_view:cardCornerRadius="8dp"
+android:layout_marginBottom="16dp">-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_visited"
+    style="@style/TextStyleNormal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/pedding_small"
+    android:background="@drawable/text_circular_view_unselect"
+    android:gravity="center"
+    android:padding="@dimen/pedding_small"
+    android:textColor="@color/white">
+
+</TextView><!--
+</android.support.v7.widget.CardView>-->

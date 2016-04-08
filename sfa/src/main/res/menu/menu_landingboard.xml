@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:App="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="search"
+        App:showAsAction="always" />
+    <item
+        android:id="@+id/action_notification"
+        android:icon="@drawable/ic_menu_notification"
+        android:title="notification"
+        App:showAsAction="always"
+        app:actionLayout="@layout/notification_count_view"></item>
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/ic_account_circle_white_24dp"
+        android:title="profile"
+        App:showAsAction="always"></item>
+
+
+</menu>

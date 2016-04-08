@@ -1,0 +1,65 @@
+<resources>
+    <string name="nav_profile_title">My Profile</string>
+    <string name="nav_myvisit_title">My Visits</string>
+    <string name="nav_accessgcloud_title">Access G Cloud</string>
+    <string name="nav_notification_title">Notifications</string>
+    <string name="nav_pending_title">Pending Transactions</string>
+    <string name="nav_attendence_title">My Attendence</string>
+    <string name="nav_report_title">Report</string>
+
+    <string name="nav_dealer_title">Dealer</string>
+    <string name="nav_customer_title">Customer</string>
+    <string name="nav_office_title">Office</string>
+    <string name="nav_bank_title">Bank</string>
+    <string name="nav_usedcar_title">New Used Car Dealership</string>
+    <string name="nav_logout_title">Logout</string>
+    <string name="nav_finance_insurance_title">Finance/Insurance</string>
+    <string name="nav_insurance_title">Insurance</string>
+    <string name="nav_classified_title">Classified</string>
+    <string name="nav_warranty_title">Warranty</string>
+    <string name="nav_call_support_title">Call Support</string>
+    <string name="nav_myattendance_title">My Attendance</string>
+    <string name="nav_search_title">Search  (Warranty/Inventory)</string>
+    <string name="hint_email">Email</string>
+    <string name="network_error">Network Connection Error</string>
+    <string name="server_error">Server Error</string>
+    <string name="application_error">Application Error</string>
+
+    <!--string of dealer screen -->
+    <string name="visited">Visited To : </string>
+    <string name="visit">Visit Type : </string>
+    <string name="role">Role</string>
+    <string name="tv_name">Name</string>
+    <string name="reset_email_sent">Password reset verification code has been sent to your email address.</string>
+    <string name="reset_password_successful">Password reset was successful!</string>
+    <string name="no_connection">This feature requires internet connection, please check&#8230;</string>
+    <string name="no_connection_title">No Internet</string>
+    <string name="settings_button_text">Settings</string>
+    <string name="cancel_button_text">OK</string>
+    <string name="go_to_app_settings">Application Settings</string>
+    <string name="error_title">Error!</string>
+    <string name="can_not_connect_google_api">Could not connect to Google API client!</string>
+    <string name="pin_drop_guide1"><![CDATA[Drag & drop the PIN]]></string>
+    <string name="pin_drop_guide2">to correct dealer location.</string>
+    <string name="btn_next_title">Next</string>
+    <string name="map_outside_circle_alert">Kindly choose within circle</string>
+    <string name="waiting_for_current_location">Waiting for Current location</string>
+
+
+    <!--Navigation Close and open-->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <!--list_item_names-->
+    <string name="edit_myvisit">EDIT</string>
+    <string name="view_myvisit">VIEW</string>
+    <string name="reschedule_myvisit">RESCHEDULE</string>
+    <string name="view_note">VIEW NOTE</string>
+    <string name="checkin_myvisit">CHECKIN</string>
+    <string name="error_email_required">Email is required!</string>
+    <string name="error_customer_email_invalid">Email is invalid!</string>
+    <string name="error_password_required">Password is required!</string>
+    <string name="error_confirm_password_required">Confirm password is required!</string>
+    <string name="error_otp_required">Verification code is required!</string>
+    <string name="error_invalid_otp">Verification code is invalid!</string>
+    <string name="error_password_confirm_password_mismatch">Password and Confirm Password do not match!</string>
+</resources>

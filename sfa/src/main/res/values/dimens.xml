@@ -1,0 +1,69 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="navigation_drawer_width">300dp</dimen>
+
+    <!--Default pedding  -->
+    <dimen name="pedding_small">5dp</dimen>
+    <dimen name="pedding_medium">8dp</dimen>
+    <dimen name="pedding_large">12dp</dimen>
+    <dimen name="pedding_xlarge">16dp</dimen>
+    <!--Default margin  -->
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_large">12dp</dimen>
+    <dimen name="margin_xlarge">16dp</dimen>
+
+    <!--margin button from  bottom  height -->
+    <dimen name="bottom_btn_height">60dp</dimen>
+    <dimen name="margin_btn_height">60dp</dimen>
+
+
+    <!-- Material Edit Text -->
+
+    <dimen name="gallery_feature_image_height">200dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="booking_card_padding">8dp</dimen>
+    <dimen name="booking_card_text_name">17sp</dimen>
+    <dimen name="booking_card_text_date">12sp</dimen>
+    <dimen name="booking_card_text_bike_detail">15sp</dimen>
+    <dimen name="booking_card_text_trans_detail">14sp</dimen>
+    <!--Text Size -->
+    <dimen name="text_size_small">8sp</dimen>
+    <dimen name="text_size_normal">12sp</dimen>
+    <dimen name="text_size_large">14sp</dimen>
+    <dimen name="text_size_xlarge">17sp</dimen>
+    <dimen name="text_size_xxlarge">20sp</dimen>
+    <dimen name="text_size_xxxlarge">25sp</dimen>
+
+
+    <!-- Material Edit Text -->
+    <dimen name="default_padding_top">8dp</dimen>
+    <dimen name="default_padding_bottom">8dp</dimen>
+    <dimen name="inner_padding_left">0dp</dimen>
+    <dimen name="inner_padding_right">0dp</dimen>
+    <dimen name="floating_label_text_size">12sp</dimen>
+    <dimen name="bottom_text_size">12sp</dimen>
+    <dimen name="inner_components_spacing">8dp</dimen>
+    <dimen name="bottom_ellipsis_height">4dp</dimen>
+    <dimen name="color_item_size">68dp</dimen>
+    <dimen name="landing_screen_spec_text_size">26sp</dimen>
+    <dimen name="edit_text_size">16sp</dimen>
+    <dimen name="login_text_size">14sp</dimen>
+    <dimen name="hint_input_text_size">12sp</dimen>
+
+
+    <dimen name="landing_screen_honda_banner_height">460dp</dimen>
+    <dimen name="landing_screen_honda_engine_start_width">80dp</dimen>
+    <dimen name="landing_screen_honda_engine_start_height">60dp</dimen>
+    <dimen name="edit_text_default_height">44dp</dimen>
+
+    <dimen name="pre_book_text_size">14sp</dimen>
+    <dimen name="tablerow_padding">4dp</dimen>
+    <dimen name="dealer_city_text_size">28sp</dimen>
+    <dimen name="dealer_city_vertical_margin">40dp</dimen>
+    <!---->
+
+</resources>
